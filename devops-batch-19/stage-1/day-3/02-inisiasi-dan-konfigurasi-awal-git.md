@@ -2,8 +2,14 @@
 
 Agar dapat menjalankan aplikasi github di perangkat komputer, tentunya perlu menginstall aplikasi github terlebih dahulu. Aplikasi github dapat diinstall melalui sofware manager atau menggunakan command di terminal. Sebelum melakukan istallasi github, pastikan sistem pada pada perangkat komputer sudah up to date. Untuk melakukannya, dapat menjalankan perintah `sudo apt update` dan `sudo apt upgrade`
 
-*gambar sudo apt update*
-*gambar sudo apt upgrade*
+![gambar sudo apt update](https://github.com/Dyno12323/devops-batch-19/blob/master/devops-batch-19/stage-1/day-3/images/01-sudo-apt-update.png)
+
+*Gambar 2.1 : Perintah `sudo apt update`*
+
+![gambar sudo apt upgrate](https://github.com/Dyno12323/devops-batch-19/blob/master/devops-batch-19/stage-1/day-3/images/02-sudo-apt-upgrade.png)
+
+*Gambar 2.2 : Perintah `sudo apt upgrade`*
+
 
 Perintah `sudo apt update` digunakan untuk mencari software dan aplikasi yang perlu untuk diperbarui, sedangkan perintah `sudo apt upgrade` digunakan untuk memasang pembaruan.  Langkah selanjutnya adalah memasang aplikasi github. Untuk melakukannya, dapat memasukkan perintah `sudo apt install apt git`
 
