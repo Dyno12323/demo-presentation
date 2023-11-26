@@ -4,25 +4,17 @@ Agar dapat menjalankan aplikasi github di perangkat komputer, tentunya perlu men
 
 ![gambar sudo apt update](https://github.com/Dyno12323/devops-batch-19/blob/master/devops-batch-19/stage-1/day-3/images/01-sudo-apt-update.png)
 
-*Menjalankan Perintah `sudo apt update`*
 
 ![gambar sudo apt upgrate](https://github.com/Dyno12323/devops-batch-19/blob/master/devops-batch-19/stage-1/day-3/images/02-sudo-apt-upgrade.png)
-
-*Menjalankan Perintah `sudo apt upgrade`*
-
 
 Perintah `sudo apt update` digunakan untuk mencari software dan aplikasi yang perlu untuk diperbarui, sedangkan perintah `sudo apt upgrade` digunakan untuk memasang pembaruan.  Langkah selanjutnya adalah memasang aplikasi github. Untuk melakukannya, dapat memasukkan perintah `sudo apt install git`
 
 ![gambar sudo apt install git](https://github.com/Dyno12323/devops-batch-19/blob/master/devops-batch-19/stage-1/day-3/images/03-sudo-apt-install-git.png)
 
-*Menjalankan Perintah `sudo apt install git`*
 
 Tunggu hingga proses pemasangan selesai. Setelah proses pemasangan selesai, pastikan aplikasi github sudah terpasang di perangkat. Untuk melakukannya, jalankan perintah `git --version`. Perintah ini digunakan untuk mengetahui versi dari github yang terpasang di perangkat yang sedang digunakan.
 
 ![gambar git --version](https://github.com/Dyno12323/devops-batch-19/blob/master/devops-batch-19/stage-1/day-3/images/04-git-version.png)
-
-*Menjalankan Perintah `git --version`*
-
 
 # Konfigurasi Github
 
@@ -32,52 +24,33 @@ Pada laman utama github, masuk ke menu sign up untuk membuat akun baru. Jika sud
 
 ![gambar laman utama github](https://github.com/Dyno12323/devops-batch-19/blob/master/devops-batch-19/stage-1/day-3/images/05-laman-utama-github.png)
 
-*gambar laman utama github*
-
 Untuk memulai konfigurasi aplikasi github, dapat menjalankan perintah `git config --global user.name “username”` dan `git config --global user.email “alamat email”`. Pada perintah pertama, ganti `“username”` menggunakan username yang sudah terdaftar di github. Pada perintah kedua, ganti `“alamat email”` menggunakan email yang terdaftar di github. Selanjutnya untuk melihat daftar konfigurasi yang ada pada repositori lokal, dapat menggunakan perintah `git config --list`
 
 ![gambar git config dan list](https://github.com/Dyno12323/devops-batch-19/blob/master/devops-batch-19/stage-1/day-3/images/06-git-config-dan-list.png)
-
-*Menjalankan Perintah `git config global user` dan `git config list`*
 
 Langkah berikutnya adalah menghubungkan repositori lokal pada perangkat komputer dengan platform github. Untuk melakukannya diperlukan secure shell key (SSH key) yang berfungsi untuk menghubungkan dua perangkat melalui jaringan yang aman. Untuk mendapatkan SSH-key dapat menjalankan perintah `ssh-keygen`
 
 ![gambar ssh-keygen](https://github.com/Dyno12323/devops-batch-19/blob/master/devops-batch-19/stage-1/day-3/images/07-ssh-keygen.png)
 
-*Menjalankan Perintah `ssh-keygen`*
-
 Tunggu hingga proses selesai dan perangkat secara otomatis akan membuat file tersembunyi bernama `.ssh` yang secara default berada di home. Di dalam folder tersebut akan ada 2 buah file bernama `id_rsa` dan `id_rsa.pub`, yang mana isi dari file `id_rsa` adalah privat key dan isi dari file `id_rsa.pub` adalah public key. Buka file dengan nama `id_rsa.pub` dan salin isi file tersebut.
 
 ![gambar public key](https://github.com/Dyno12323/devops-batch-19/blob/master/devops-batch-19/stage-1/day-3/images/08-public-key.png)
-
-*Melihat isi file id_rsa.pub*
 
 Selanjutnya, melakukan pengaturan public key di laman github. Masuk ke akun github, dan pergi ke menu pengaturan kemudian pilih menu SSH and GPG Keys.
 
 ![gambar laman utama github](https://github.com/Dyno12323/devops-batch-19/blob/master/devops-batch-19/stage-1/day-3/images/09.1-home-github.png)
 
-*Laman Utama Platform Github*
-
 ![gambar menu ssh dan gpg key](https://github.com/Dyno12323/devops-batch-19/blob/master/devops-batch-19/stage-1/day-3/images/09.2-menu-ssh-dan-gpg-key.png)
-
-*Menu Settings Platform Github*
 
 Di dalam menu SSH and GPG Keys, pilih opsi new SSH Key dan lengkapi formulirnya.
 
 ![gambar menu ssh dan gpg key 2](https://github.com/Dyno12323/devops-batch-19/blob/master/devops-batch-19/stage-1/day-3/images/10.1-menu-ssh-gpg-key.png)
 
-*Menu SSH and GPG keys Platform Github*
-
 ![gambar formulir ssh key](https://github.com/Dyno12323/devops-batch-19/blob/master/devops-batch-19/stage-1/day-3/images/10.2-formulir-ssh-key.png)
-
-*Mengisi Formulir SSH key Platform Github*
 
 Setelah selesai mengisi formulir, jalankan perintah `ssh -T git@github.com` di terminal untuk memastikan perangkat benar-benar terhubung dengan platform github.
 
 ![gambar formulir ssh key](https://github.com/Dyno12323/devops-batch-19/blob/master/devops-batch-19/stage-1/day-3/images/11-cek-koneksi-ssh.png)
-
-*Menjalankan Perintah `ssh -T git@github.com`*
-
 
 # Membuat Repositori Github
 
