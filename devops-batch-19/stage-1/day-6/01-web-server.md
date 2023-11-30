@@ -2,7 +2,7 @@
 
 Web Server adalah perangkat lunak yang menyediakan layanan kepada pengguna melalui jaringan internet. Fungsi utama dari web server adalah menyajikan halaman web kepada klien yang mengaksesnya. Cara kerjanya adalah ketika web server menerima request dari klien maka web server akan memberi respon sesuai dengan permintaan klien.
 
-![gambar]()
+![gambar diagram web server](https://github.com/Dyno12323/devops-batch-19/blob/master/devops-batch-19/stage-1/day-6/images/01-web-server/diagram-web-server.png)
 
 > Proses kerja web server
 
@@ -20,11 +20,11 @@ Nginx adalah salah satu dari macam-macam web server. Untuk menjalankan web serve
 > 
 > `sudo systemctl sattus nginx` adalah perintah untuk melihat status nginx
 
-![gambar status nginx]()
+![gambar status nginx](https://github.com/Dyno12323/devops-batch-19/blob/master/devops-batch-19/stage-1/day-6/images/01-web-server/nginx-status-nginx.png)
 
 Untuk mengecek berjalan tidaknya nginx, buka browser dan masukkan alamat `localhost`. 
 
-![gambar localhost]()
+![gambar localhost](https://github.com/Dyno12323/devops-batch-19/blob/master/devops-batch-19/stage-1/day-6/images/01-web-server/nginx-browser-nginx-berjalan.png)
 
 ### Perintah untuk mengelola layanan nginx
 

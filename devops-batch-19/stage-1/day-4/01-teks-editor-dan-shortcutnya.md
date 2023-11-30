@@ -10,7 +10,7 @@ Teks editor merupakan program komputer yang digunakan untuk membuat, mengedit, d
 
 Perintah `nano --version` digunakan untuk melihat versi aplikasi Nano yang terinstal di perangkat.
 
-![gambar versi nano]()
+![gambar versi nano](https://github.com/Dyno12323/devops-batch-19/blob/master/devops-batch-19/stage-1/day-4/images/01-teks-editor-dan-shortcutnya/01-nano-version.png)
 
 ### Menginstall aplikasi Nano
 
@@ -18,7 +18,7 @@ Perintah `nano --version` digunakan untuk melihat versi aplikasi Nano yang terin
 
 Jika aplikasi Nano belum terpasang di perangkat, gunakan perintah `sudo apt-get install nano -y` untuk memasang aplikasi Nano ke perangkat.
 
-![gambar install nano]()
+![gambar install nano](https://github.com/Dyno12323/devops-batch-19/blob/master/devops-batch-19/stage-1/day-4/images/01-teks-editor-dan-shortcutnya/02-install-apt-nano.png)
 
 ### Membuka file menggunakan aplikasi Nano
 
@@ -26,9 +26,9 @@ Jika aplikasi Nano belum terpasang di perangkat, gunakan perintah `sudo apt-get 
 
 Untuk membuka file menggunakan aplikasi Nano, bisa menjalankan perintah `nano` diikuti `nama-file` yang ingin dibuka. 
 
-![membuka file menggunakan nano]()
+![membuka file menggunakan nano](https://github.com/Dyno12323/devops-batch-19/blob/master/devops-batch-19/stage-1/day-4/images/01-teks-editor-dan-shortcutnya/03.1-buka-file-dengan-nano.png)
 
-![isi file]()
+![isi file](https://github.com/Dyno12323/devops-batch-19/blob/master/devops-batch-19/stage-1/day-4/images/01-teks-editor-dan-shortcutnya/03.2-isi-file.png)
 
 > **Catatan**
 
